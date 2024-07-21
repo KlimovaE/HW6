@@ -17,18 +17,30 @@ public class Main {
         double average = 0;
         double smallest = 0;
         //todo дописать логику программы ниже.
-
-
-
-
-
-
-
-        //todo
-
-
-        System.out.println("Наибольший вес: " + 10);
-        System.out.println("Средний вес: " + 9);
-        System.out.println("Наименьший вес: " + 1);
+        if (first > second && first > third && second > third) {
+            System.out.println("Наибольший вес: " + first);
+            System.out.println("Средний вес: " + second);
+            System.out.println("Наименьший вес: " + third);
+        } else if (first > second && first > third && second < third) {
+            System.out.println("Наибольший вес: " + first);
+            System.out.println("Средний вес: " + third);
+            System.out.println("Наименьший вес: " + second);
+        } else if (second > first && second > third && first > third) {
+            System.out.println("Наибольший вес: " + second);
+            System.out.println("Средний вес: " + first);
+            System.out.println("Наименьший вес: " + third);
+        }else if (second > first && second > third && first < third) {
+            System.out.println("Наибольший вес: " + second);
+            System.out.println("Средний вес: " + third);
+            System.out.println("Наименьший вес: " + first);
+        }else if (third > first && third > second && first > second) {
+            System.out.println("Наибольший вес: " + third);
+            System.out.println("Средний вес: " + first);
+            System.out.println("Наименьший вес: " + second);
+        }else if (third > first && third > second && first < second) {
+            System.out.println("Наибольший вес: " + third);
+            System.out.println("Средний вес: " + second);
+            System.out.println("Наименьший вес: " + first);
+        }
     }
 }
